@@ -14,7 +14,13 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    const sourceString = str.replace(/[^a-zа-яё0-9]/gi, '');
+    let reverseString = '';
+    for (let i = sourceString.length-1; i >= 0; i-- ) {
+        reverseString +=  sourceString[i];
+    }
+    const result = sourceString.toLowerCase() === reverseString.toLowerCase();
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
@@ -30,3 +36,5 @@ console.log(palindrome('привет')); // false
  * palindrome('О, лета тело!'); // true
  * 
 */
+
+console.log(palindrome('О, лета тело!')); // true
