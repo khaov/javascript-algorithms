@@ -9,7 +9,15 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+    const sourceString = str.replace(/[,]/g, '');
+    const sourceArray = sourceString.split(' ');
+    let reverseString = ''
+    let reverseArray = [];
+    for (let i = sourceArray.length-1; i >= 0; i-- ) {
+        reverseArray.push(sourceArray[i]);
+    }
+    reverseString = reverseArray.join(' ');
+    return reverseString;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
