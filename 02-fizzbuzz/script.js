@@ -11,7 +11,10 @@
 */
 
 function fizzBuzz(num) {
-    // Напишите код здесь
+    for (let i = 1; i <= num; i++) {
+        const consoleMessage = (i%3 === 0 ? 'fizz' : '')+(i%5 === 0 ? 'buzz' : '');
+        console.log(consoleMessage === '' ? i : consoleMessage);
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
