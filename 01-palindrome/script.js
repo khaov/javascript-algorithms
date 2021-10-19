@@ -16,7 +16,7 @@
 function palindrome(str) {
     const sourceString = str.replace(/[^a-zа-яё0-9]/gi, '');
     let reverseString = '';
-    for (let i = sourceString.length-1; i >= 0; i-- ) {
+    for (let i = sourceString.length-1; i >= 0; i--) {
         reverseString +=  sourceString[i];
     }
     const result = sourceString.toLowerCase() === reverseString.toLowerCase();
