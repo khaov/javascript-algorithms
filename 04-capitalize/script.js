@@ -7,17 +7,16 @@
 */
 
 function capitalize(str) {
-    let capitalizeString = '';
-    for (let i = 0; i < str.length; i++) {
-        capitalizeString += (i === 0 || str[i - 1] === ' ') ? str[i].toUpperCase() : str[i];
-    }
-    return capitalizeString;
+    return str.split(' ').map(function (item) {
+        return item === '' ? '' : item[0].toUpperCase() + item.substring(1);
+    }).join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(capitalize('Испробовать Их Все Должны Вы'));
-console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
+console.log(capitalize('молодость всё простит'));
 console.log(capitalize(' '));
 console.log(capitalize('слово '));
-console.log(capitalize('')); 
+console.log(capitalize(''));
+console.log(capitalize('молодость  всё  простит'));

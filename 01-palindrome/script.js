@@ -20,6 +20,7 @@ function palindrome(str) {
         reverseString +=  sourceString[i];
     }
     const result = sourceString.toLowerCase() === reverseString.toLowerCase();
+    console.log(result);
     return result;
 }
 
