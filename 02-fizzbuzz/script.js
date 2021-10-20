@@ -12,7 +12,7 @@
 
 function fizzBuzz(num) {
     for (let i = 1; i <= num; i++) {
-        const consoleMessage = (i%3 === 0 ? 'fizz' : '')+(i%5 === 0 ? 'buzz' : '');
+        const consoleMessage = (i % 3 === 0 ? 'fizz' : '')+(i % 5 === 0 ? 'buzz' : '');
         console.log(consoleMessage === '' ? i : consoleMessage);
     }
 }
