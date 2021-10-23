@@ -8,7 +8,14 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    const intersectionArray = arr1.filter(function (item) {
+        return arr2.includes(item);
+    });
+
+    return intersectionArray.filter(function (item, index) {
+        return intersectionArray.lastIndexOf(item) === index;
+    });
+
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

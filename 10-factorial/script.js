@@ -12,7 +12,7 @@ function factorial(n) {
     for (i = 1; i <= n; i++){
         factorialResult *= i;
     }
-    return factorialResult
+    return factorialResult;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
