@@ -15,7 +15,6 @@ function intersection(arr1, arr2) {
     return intersectionArray.filter(function (item, index) {
         return intersectionArray.lastIndexOf(item) === index;
     });
-
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
