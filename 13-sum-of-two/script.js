@@ -8,8 +8,19 @@
  * 
 */
 
-function sumOfTwo(arr, sum) {
-    // Напишите код здесь
+function sumOfTwo(arr, num) {
+    for (let i = 0; i <= arr.length; i++) {
+        let sumResult = false;
+        const currentNumber = arr[i];
+        const summandNumbers = arr.slice(i);
+        for (let i = 0; i <= summandNumbers.length; i++) {
+            if (currentNumber + summandNumbers[i] === num) {
+                sumResult = true;
+                break;
+            }
+        }
+        return sumResult;
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
