@@ -7,7 +7,20 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+    const primesArray = [];
+    for (let i = 2; i <= num; i++) {
+        let flag = true;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag === true) {
+            primesArray.push(i);
+        }
+    }
+    return primesArray;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

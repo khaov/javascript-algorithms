@@ -12,7 +12,7 @@ function reverseWords(str) {
     const sourceString = str.replace(/[^a-zа-яё0-9\s]/gi, '');
     const sourceArray = sourceString.split(' ');
     let reverseString = ''
-    let reverseArray = [];
+    const reverseArray = [];
     for (let i = sourceArray.length-1; i >= 0; i--) {
         reverseArray.push(sourceArray[i]);
     }
